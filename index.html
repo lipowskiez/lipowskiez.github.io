@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Blog Jakuba Lipińskiego</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family:'Calibri';
+  margin: auto;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #660313;
+  color: rgb(255, 255, 255);
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #000000;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #660313;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #310101;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color:#660313;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #141414;
+  width: 100%;
+  padding: 20px;
+  
+  
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: black;
+  color:white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:black;padding:5px">
+  <h4 style="text-align:center; color:white;">Zmień rozmiar okna aby zobaczyć efekt końcowy.</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>King Von</h1>
+  <p>Strona z <b>elastycznym</b> układem.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="https://www.youtube.com/watch?v=g0v7Ow6Epog&ab_channel=KingVon">Crazy Story</a>
+  <a href="https://www.youtube.com/watch?v=tBKYI3-3lMg&ab_channel=KingVon">Armed & Dangerous</a>
+
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>Armed & Dangerous</h2>
+    <h5></h5>
+    <div><img src="https://cdns-images.dzcdn.net/images/cover/ac91b15ba71c07781b1b81b8c6a1eabf/0x1900-000000-80-0-0.jpg"style="width: 40%;"></div>
+    <p></p>
+    <h2>Crazy Story</h2>
+    <p></p>
+    <div><img src="https://i1.sndcdn.com/artworks-000599699847-nqktci-t1080x1080.jpg"style="width:40% ;"></div>
+  </div>
+  <div class="main">
+    <h2>Album Walcome to O'Block</h2>
+    <h5></h5>
+    <div><img src="https://imageio.forbes.com/specials-images/imageserve/62141d9ea49bf35494c0952c/camkirkkingvon-57-scaled--1-/0x0.jpg?format=jpg&crop=1707,1281,x0,y159,safe&width=960"style="width:20%"></div>
+    <p>Wydany 20 pazdziernika 2020</p>
+    <p></p>
+    <br>
+    <h2>Album Grandson, Vol.1</h2>
+    <h5></h5>
+    <div><img src="https://ew.com/thmb/QdD4hNeefEEzSwUh5qFGE8N-2Jo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1270693719-3998b949bd6446b7bd45030fad01b1d4.jpg"style="width: 40%;"></div>
+    <p>Wydany w 2019r</p>
+    <p></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Stopa</h2>
+</div>
+
+</body>
+</html>
