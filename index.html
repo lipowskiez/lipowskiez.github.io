@@ -1,144 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Blog Jakuba Lipińskiego</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan & BAPE Shop</title>
+    <link rel="stylesheet" href="styles.css">
 
-/* Style the body */
+    <style>
 body {
-  font-family:'Calibri';
-  margin: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header/logo Title */
-.header {
-  padding: 60px;
-  text-align: center;
-  background: #660313;
-  color: rgb(255, 255, 255);
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #000000;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  text-align: center;
+header nav ul li {
+    margin: 0 15px;
 }
 
-/* Change color on hover */
-.navbar a:hover {
-  background-color: #660313;
-  color: black;
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
+.hero {
+    width: 20%;
+    height: 500px;
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color: #310101;
-  padding: 20px;
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Main column */
-.main {
-  flex: 70%;
-  background-color:#660313;
-  padding: 20px;
+.category {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #141414;
-  width: 100%;
-  padding: 20px;
-  
-  
+.category img {
+    width: 100%;
+    height: auto;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: black;
-  color:white;
+.category h2 {
+    font-size: 24px;
+    margin: 15px 0;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
+.category p {
+    font-size: 16px;
+    color: #555;
 }
-</style>
+
+.category button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category button:hover {
+    background-color: #555;
+}
+
+
+    </style>
 </head>
 <body>
-
-<!-- Note -->
-<div style="background:black;padding:5px">
-  <h4 style="text-align:center; color:white;">Zmień rozmiar okna aby zobaczyć efekt końcowy.</h4>
-</div>
-
-<!-- Header -->
-<div class="header">
-  <h1>King Von</h1>
-  <p>Strona z <b>elastycznym</b> układem.</p>
-</div>
-
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="https://www.youtube.com/watch?v=g0v7Ow6Epog&ab_channel=KingVon">Crazy Story</a>
-  <a href="https://www.youtube.com/watch?v=tBKYI3-3lMg&ab_channel=KingVon">Armed & Dangerous</a>
-
-</div>
-
-<!-- The flexible grid (content) -->
-<div class="row">
-  <div class="side">
-    <h2>Armed & Dangerous</h2>
-    <h5></h5>
-    <div><img src="https://cdns-images.dzcdn.net/images/cover/ac91b15ba71c07781b1b81b8c6a1eabf/0x1900-000000-80-0-0.jpg"style="width: 40%;"></div>
-    <p></p>
-    <h2>Crazy Story</h2>
-    <p></p>
-    <div><img src="https://i1.sndcdn.com/artworks-000599699847-nqktci-t1080x1080.jpg"style="width:40% ;"></div>
-  </div>
-  <div class="main">
-    <h2>Album Walcome to O'Block</h2>
-    <h5></h5>
-    <div><img src="https://imageio.forbes.com/specials-images/imageserve/62141d9ea49bf35494c0952c/camkirkkingvon-57-scaled--1-/0x0.jpg?format=jpg&crop=1707,1281,x0,y159,safe&width=960"style="width:20%"></div>
-    <p>Wydany 20 pazdziernika 2020</p>
-    <p></p>
-    <br>
-    <h2>Album Grandson, Vol.1</h2>
-    <h5></h5>
-    <div><img src="https://ew.com/thmb/QdD4hNeefEEzSwUh5qFGE8N-2Jo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1270693719-3998b949bd6446b7bd45030fad01b1d4.jpg"style="width: 40%;"></div>
-    <p>Wydany w 2019r</p>
-    <p></p>
-  </div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-  <h2>Stopa</h2>
-</div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Jordan 3</a></li>
+                <li><a href="#">Jordan 4</a></li>
+                <li><a href="#">Jordan 5</a></li>
+                <li><a href="#">BAPE Hoodies</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/ak-footwear-logo-design-template-5af0d42783c8dc6a846df938a0b71789_screen.jpg?ts=1675407249" alt="Jordan & BAPE Collection">
+        </section>
+        <section class="categories">
+            <div class="category">
+                <h2>Jordan 3</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTttl2jvNKykODoa5Z3VC8vgMcJbJsK66-BBtq89XFm4mH4BLDdmtTpemzF7sZjmQnaz0H9ZFdwTm6eyqaU9tde1b5JHxjUv9rIsLu5DpJa55Z-8FxMbfts-_8" alt="Jordan 3">
+                <p>Retro White Cement Reimagined</p>
+                <button>Add to cart - $200</button>
+            </div>
+            <div class="category">
+                <h2>Jordan 4</h2>
+                <img src="https://n-hype.com/cdn/shop/files/Jordan4RetroRedThunder-CT8527-016-N-hype-1.webp?v=1686642650&width=2048" alt="Jordan 4">
+                <p>Retro Red Thunder</p>
+                <button>Add to cart - $220</button>
+            </div>
+            <div class="category">
+                <h2>Jordan 5</h2>
+                <img src="https://aplug.pl/cdn/shop/products/jordan-air-jordan-5-unc_19517470_44650763_2048.png?v=1701243018" alt="Jordan 5">
+                <p>University Blue</p>
+                <button>Add to cart - $240</button>
+            </div>
+            <div class="category">
+                <h2>BAPE Hoodies</h2>
+                <img src="https://n-hype.com/cdn/shop/files/BAPEABCCamoSharkFullZipHoodiePinkFrontLodzPolskaNHype.png?v=1716887484&width=2048" alt="BAPE Hoodie">
+                <p></p>
+                <button>Add to cart - $150</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
