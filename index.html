@@ -15,114 +15,110 @@
     <meta name="twitter:image" content="link-do-twojego-zdjęcia.jpg">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-header nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
+        header nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
 
-section {
-    padding: 2rem;
-}
+        section {
+            padding: 2rem;
+            margin-top: 4rem; /* Adjust this if header height changes */
+        }
 
-#home {
-    background: #f4f4f4;
-    text-align: center;
-}
+        #strona {
+            background: #f4f4f4;
+            text-align: center;
+            padding-top: 6rem; /* Added padding to avoid overlap */
+        }
 
-#about, #projects, #contact {
-    background: white;
-}
+        #omnie,  #kontakt {
+            background: white;
+            text-align: center;
+        }
 
-.project {
-    margin-bottom: 2rem;
-}
+        .project {
+            margin-bottom: 2rem;
+        }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
 
-@media (max-width: 600px) {
-    header nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
+        @media (max-width: 600px) {
+            header nav ul li {
+                display: block;
+                margin: 0.5rem 0;
+            }
 
-    footer {
-        position: static;
-        padding: 1rem 0;
-    }
-}
+            footer {
+                position: static;
+                padding: 1rem 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Twoje Imię</h1>
-        <p>Web Developer</p>
+        <h1>Kuba Lipiński</h1>
+        <p>Technik informatyk</p>
         <nav>
             <ul>
-                <li><a href="#home">Strona Główna</a></li>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#projects">Projekty</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#strona">Strona Główna</a></li>
+                <li><a href="#omnie">O mnie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <h2>Witaj!</h2>
-        <p>Jestem Twoje Imię, Web Developer specjalizujący się w tworzeniu nowoczesnych i responsywnych stron internetowych.</p>
+    <section id="strona">
+        <h2>Cześć</h2>
+        <p>Mam na imię Kuba i interesuje się składaniem komputerów</p>
     </section>
 
-    <section id="about">
+    <section id="omnie">
         <h2>O mnie</h2>
-        <p>Jestem doświadczonym programistą z pasją do tworzenia innowacyjnych rozwiązań webowych...</p>
+        <img src="https://lh3.googleusercontent.com/p/AF1QipOCJdbEZ0ThJ9B3Nvqb4Nx2lPWaDYWbIiq3fY3O=s680-w680-h510" alt="Twoje zdjęcie">
+        <p>Chodzę do 2 Klasy Informatycznej Technikum Nr.10 im. Fryderyka Joliot-Curie Wrocław przy ulicy Braniborskiej</p>
+            <img src="https://pbs.twimg.com/tweet_video_thumb/F_X1_1lXMAA1JCg.jpg" alt="">
     </section>
 
-    <section id="projects">
-        <h2>Projekty</h2>
-        <div class="project">
-            <h3>Nazwa Projektu 1</h3>
-            <p>Opis projektu...</p>
-        </div>
-        <div class="project">
-            <h3>Nazwa Projektu 2</h3>
-            <p>Opis projektu...</p>
-        </div>
-        <!-- Dodaj więcej projektów według potrzeb -->
-    </section>
+  
 
-    <section id="contact">
+    <section id="kontakt">
         <h2>Kontakt</h2>
-        <p>Skontaktuj się ze mną przez email: <a href="mailto:twoj-email@example.com">twoj-email@example.com</a></p>
+        <p>Jeśli chciałbyś więcej informacji pisz na meila <a href="kubalipinski5@gmail.com">kubalipinski5@gmail.com</a></p>
     </section>
 
     <footer>
